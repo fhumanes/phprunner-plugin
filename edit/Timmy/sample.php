@@ -1,0 +1,19 @@
+$this->settings["required"] = false; // Wether is mandatory
+$this->settings["tooltip"] = "Click here to enter date / time"; // Information tooltip
+
+$this->settings["format"] = "DD/MM/YYYY HH:mm"; // MomentJS Format. Check http://momentjs.com
+$this->settings["shortTime"] = true; // Display 12 hours AM|PM
+$this->settings["minDate"] = null; // Minimum selectable date
+$this->settings["maxDate"] = null; // Maximum selectable date
+$this->settings["currentDate"] = null; // Initial date
+$this->settings["date"] = true; // Has datepicker
+$this->settings["time"] = true; // Has timepicker
+$this->settings["clearButton"] = true; // Show clear button
+$this->settings["nowButton"] = true; // Show now button
+$this->settings["switchOnClick"] = true; // Switch view on click
+$this->settings["cancelText"] = "Cancel"; // Text for the cancel button
+$this->settings["okText"] = "OK"; // Text for the OK button
+$this->settings["clearText"] = "Clear"; // Text for the clear button
+$this->settings["nowText"] = "Now"; // Text for the now button
+$this->settings["lang"] = "en"; // Language for displaying names
+$this->settings["weekStart"] = 0; // Beggining day of week

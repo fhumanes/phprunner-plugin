@@ -1,0 +1,9 @@
+<style>      
+    body { margin: 0px; padding: 0px; } 
+    p { font-size: 12px; font-weight: normal; font-family: Verdana, Arial, Helvetica, sans-serif; } 
+    .container { background: white;  border: 1px solid #c0c0c0; width: 100%; height: 100%; padding: 10px; }
+</style>
+<div class="container">
+  <p><span style="font-weight: bold; text-decoration: underline;">Sqlcodemirror5 Texteditor</span></p>
+  <p><span style="font-weight: bold;">Sqlcodemirror5</span> is a plugin built by <span style="font-weight: bold;">fhumanes</span>. Is a versatile text editor implemented in JavaScript for the browser. It's based on https://codemirror5.net/ </p>
+</div> 

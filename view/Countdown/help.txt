@@ -1,0 +1,31 @@
+<style>
+
+body {
+margin: 0px;
+padding: 0px;
+font-size: 12px;
+font-weight: normal;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.container {
+background: white;
+border: 1px solid #c0c0c0;
+width: 100%;
+height: 100%;
+padding: 10px;
+}
+</style>
+<div class="container">
+<p>
+Countdown is a plugin that show a countdown to a given time. The defaults settings are:
+<ul>
+<li>Text is in English</li>
+<li>Format is 'dHMS'</li>
+<li>Days are shown if needed</li>
+<li>Hours/minutes/seconds are shown</li>
+</ul>
+You can control how the countdown is presented via the format setting. 
+This is one or more of the following characters: 'Y' for years, 'O' for months, 'W' for weeks, 'D' for days, 'H' for hours, 'M' for minutes, 'S' for seconds. Use upper-case characters for required fields and the corresponding lower-case characters for display only if non-zero.
+Check the settings below for extra customization.
+</p>
+</div>

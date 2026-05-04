@@ -1,0 +1,9 @@
+$this->settings["apikey"] = ""; // Google Maps API KEY. Refer to https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key
+$this->settings["title"] = 'Point selected'; // Header caption of map
+$this->settings["contentswidth"] = 'default'; // 'default' for window's width - 100
+$this->settings["contentsheight"] = ''; // '' for window's height - 100
+$this->settings["tooltip"] = "Click here to see the map"; // Information for the button
+$this->settings["textbutton"] = "Location"; // Button's caption
+$this->settings["zoom"] = 15; // Map's detail level
+$this->settings["radius"] = 20; // Size of circle to show around the point
+$this->settings["mapType"] = "ROADMAP"; // Possible values: ROADMAP, SATELLITE, HYBRID, TERRAIN

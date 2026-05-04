@@ -1,0 +1,26 @@
+<style>
+	body {
+		margin: 0px;
+		padding: 0px;
+	}
+	p {
+		font-size: 12px;
+		font-weight: normal;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		text-align: center;
+	}
+	.container {
+		background: #F2F5A9;
+		border: 1px solid #c0c0c0;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+	}
+</style>
+
+<div class="container">
+	<p></BR><b><u>DOCKY</u></b></p>
+	<p><b>DOCKY</b> is a plugin built by <b>MIB</b>. It lets you preview any document stored in a blob field. It's based on this article: https://xlinesoft.com/blog/2015/06/27/using-google-docs-viewer-to-preview-documents-online.</BR></BR>Help: plugins/controlesmib/docky/help/help.html</p>
+	<p>Be sure to have write permissions on plugins/controlesmib/docky/content/files (Docky needs to create and delete files there).</p>
+	<p>Check daily the space in plugins/controlesmib/docky/content/files in order to control if Docky is generating waste.</p>
+</div>

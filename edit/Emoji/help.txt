@@ -1,0 +1,15 @@
+<style>      
+    body { margin: 0px; padding: 0px; } 
+    p { font-size: 12px; font-weight: normal; font-family: Verdana, Arial, Helvetica, sans-serif; } 
+    .container { background: white;  border: 1px solid #c0c0c0; width: 100%; height: 100%; padding: 10px; }
+</style>
+<div class="container">
+  <p><span style="font-weight: bold; text-decoration: underline;">Emoji</span></p>
+  <p><span style="font-weight: bold;">Emoji</span> is a plugin built by <span style="font-weight: bold;">FHUMANES</span>. It is a solution of a text area where Emoji can be included. It's based in plugin https://github.com/OneSignal/emoji-picker </p>
+
+  <p align="center"><span style="color: rgb(255, 0, 0);">Important announcement</span></p>
+  <p>The database <span style="font-weight: bold;">field </span>must be "utf8mb4 '.If you <span style="font-weight: bold;">have problems</span>, in the "<span style="font-weight: bold;">After application initialized</span>" event you must include these lines so that your application's communication with the database supports "utf8mb4". <br />
+    </p>
+  <pre>$sql = "SET character_set_results = 'utf8mb4', character_set_client = 'utf8mb4', character_set_connection = 'utf8mb4', character_set_database = 'utf8mb4', character_set_server = 'utf8mb4'";  // set names UTF8MB4<br />DB::Exec($sql);<br />
+    </pre>
+</div> 

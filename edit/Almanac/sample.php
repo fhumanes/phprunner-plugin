@@ -1,0 +1,19 @@
+$this->settings["required"] = false; // Wether is mandatory
+$this->settings["tooltip"] = "Click here to enter date"; // Information tooltip
+
+$this->settings["animate"] = false; // Run an animation on first click and on all user changes
+$this->settings["init_animation"] = "bounce"; // Animation style. Available values are fadeIn, bounce and dropDown
+$this->settings["format"] = "m-d-Y"; // Date format string. Available values (in logic combinations) are: M,F,m,n,Y,d,j,D,l
+$this->settings["lang"] = "en"; // Display language to use for month name and day of week
+$this->settings["lock"] = false; // Set the initial value to current date or lock the control value to current date. Available values: false, from, to
+$this->settings["maxYear"] = 0; // The highest year value the control will allow. If 0, then current year
+$this->settings["minYear"] = 1970; // The oldest year the control will allow
+$this->settings["yearsRange"] = 10; // It groups the years based on the value set (multiple)
+$this->settings["dropPrimaryColor"] = "#045FB4"; // Specify a color value for drop down accent color
+$this->settings["dropTextColor"] = "#333"; // Specify a color value for drop down text color
+$this->settings["dropBackgroundColor"] = "#FFFFFF"; // Specify a color value for drop down background color
+$this->settings["dropBorder"] = "1px solid #045FB4"; // Specify a css proprieties for drop down border style
+$this->settings["dropBorderRadius"] = 12; // Specify a integer value for drop down border radius
+$this->settings["dropShadow"] = "0 0 10px 0 rgba(4, 95, 180, 0.45)"; // Specify a css proprieties for drop down shadow
+$this->settings["dropWidth"] = 124; // Specify a integer value for drop down width
+$this->settings["dropTextWeight"] = "bold"; // Specify a integer value (or bold or normal) for drop down text weight

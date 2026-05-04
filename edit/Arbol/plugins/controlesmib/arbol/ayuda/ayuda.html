@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>MIB &copy; Arbol</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> -->
+	<meta name="title" content="Árbol" />
+	<meta name="description" content="Plugin for PHPRunner" />
+	<meta name="keywords" content="plugin" />
+	<meta name="language" content="es" />
+	<meta name="subject" content="Plugin for PHPRunner" />
+	<meta name="robots" content="All" />
+	<meta name="copyright" content="MIB" />
+	<meta name="abstract" content="Plugin for PHPRunner" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<style>
+		html { height: 100%;}
+		* { margin: 0; padding: 0;}
+		body { font: normal .78em arial, sans-serif; background: #444; color: #555; }
+		p { padding: 0 0 16px 0; line-height: 1.7em; }
+		img { border: 0;}
+		h1, h2, h3, h4, h5, h6 { font: normal 175% 'century gothic', arial, sans-serif; color: #111; margin: 0 0 15px 0; padding: 15px 0 5px 0; }
+		h2 { font: normal 175% 'century gothic', arial, sans-serif; color: #444; }
+		h4, h5, h6 { margin: 0; padding: 0 0 5px 0; font: normal 120% arial, sans-serif; color: #555; }
+		h5, h6 { font: italic 95% arial, sans-serif; padding: 0 0 15px 0; color: #000; }
+		h6 { color: #888; }
+		a, a:hover { outline: none; color: #111; text-decoration: underline; }
+		a:hover { text-decoration: none; }
+		blockquote { margin: 20px 0 20px 0; padding: 10px 20px 0 20px; border: 1px solid #E5E5DB; background: #F5F5F1; }
+		ul { margin: 2px 0 22px 17px; }
+		ul li { list-style-type: circle; margin: 0 0 6px 0; padding: 0 0 4px 5px; }
+		ol { margin: 8px 0 22px 20px; }
+		ol li { margin: 0 0 11px 0; }
+		#main, #header, #logo, #menubar, #site_content, #footer { margin-left: auto; margin-right: auto; }
+		#main { width: 910px; background: url(content.png) repeat-y; }
+		#header { width: 890px; background: url(back.png) repeat-x; }
+		#logo { width: 890px; position: relative; height: 130px; background: LightSlateGray; background: -moz-linear-gradient(top, black, white,); background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(black)); background: -o-linear-gradient(top, white, black); background: linear-gradient(white, black); }
+		#logo #logo_text { position: absolute; top: 0px; left: 30px; }
+		#logo h1, #logo h2 { font: normal 300% 'century gothic', arial, sans-serif; border-bottom: 0; text-transform: none; margin: 0; }
+		#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover { padding: 10px 0 0 0; color: #FFF; letter-spacing: 0.1em; text-decoration: none; }
+		#logo_text h1 a .logo_colour { color: #555; }
+		#logo_text h2 { font-size: 130%; padding: 0; color: #444; }
+		#menubar { width: 890px; height: 35px; padding: 8px 0 0 0; margin: -45px 0 0 0; position: relative; z-index: 1; float: right; } 
+		ul#menu { float: right; margin: 0; }
+		ul#menu li { float: left; margin: 5px 0 0 0; padding: 0 0 0 6px; list-style: none; }
+		ul#menu li a { letter-spacing: 0em; font: normal 105% arial, sans-serif; text-transform: uppercase; display: block; float: left; height: 20px; text-decoration: none; padding: 9px 22px 5px 16px; text-align: center; color: #FFF; border: 0; }
+		ul#menu li.selected a { height: 25px; color: #111; padding: 7px 22px 5px 16px; }
+		ul#menu li.selected { margin: 7px 0 0 0; background: #F8F8F8; }
+		ul#menu li a:hover { color: #888; }
+		#site_content { width: 890px; overflow: hidden; background: #F8F8F8; }
+		.sidebar { float: right; width: 198px; padding: 20px 25px 15px 15px; }
+		.sidebar ul { width: 178px; padding: 4px 0 0 0; margin: 4px 0 30px 0; }
+		.sidebar li { list-style: none; padding: 0 0 7px 0; }
+		.sidebar li a, .sidebar li a:hover { padding: 0 0 0 40px; display: block; background: transparent url(link.png) no-repeat left center; }
+		.sidebar li a.selected { color: #444; text-decoration: none; }
+		#content { text-align: justify; width: 600px; float: left; padding: 20px 0 15px 30px; }
+		#content ul { margin: 2px 0 22px 0px; }
+		#content ul li { list-style-type: none; background: url(bullet.png) no-repeat; margin: 0 0 6px 0; padding: 0 0 4px 25px; line-height: 1.5em; }
+		#footer { width: 890px; height: 33px; padding: 20px 0 4px 0; text-align: center; background: LightSlateGray;  background: -moz-linear-gradient(top, black, white,); background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(black)); background: -o-linear-gradient(top, white, black); background: linear-gradient(white, black); color: #AAA; border-top: 1px solid #FFF; letter-spacing: 0.2em; text-transform: uppercase; font-size: 80%; }
+		#footer a { color: #FFF; text-decoration: none; }
+		#footer a:hover { color: #FFF; text-decoration: none; }
+		.search { color: #5D5D5D; border: 1px solid #BBB; width: 134px; padding: 4px; font: 100% arial, sans-serif; }
+		#colours { height: 0px; text-align: right; padding: 66px 16px 0px 300px; }
+		.form_settings { margin: 15px 0 0 0; }
+		.form_settings p { padding: 0 0 4px 0; }
+		.form_settings span { float: left; width: 200px; text-align: left; }
+		.form_settings input, .form_settings textarea { padding: 5px; width: 299px; font: 100% arial; border: 1px solid #E5E5E5; background: #FFF; color: #555; }
+		.form_settings .submit { font: 100% arial; border: 1px solid; width: 99px; margin: 0 0 0 212px; height: 33px; padding: 2px 0 3px 0; cursor: pointer; background: #555; color: #FFF; }
+		.form_settings textarea, .form_settings select { font: 100% arial; width: 299px; }
+		.form_settings select { width: 310px; }
+		.form_settings .checkbox { margin: 4px 0; padding: 0; width: 14px; border: 0; background: none; }
+		table { margin: 10px 0 30px 0; }
+		table tr th, table tr td { background: #333; color: #FFF; padding: 7px 4px; text-align: center; }
+		table tr td { background: #eee; color: #555; border-top: 1px solid #FFF; }
+		*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 20px;
+  color: white;
+  background: tomato;
+  -webkit-transition: background 150ms ease-out;
+  transition: background 150ms ease-out;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.button:hover, .button:active {
+  background: #ff7961;
+  -webkit-transition: background 250ms ease-out;
+  transition: background 250ms ease-out;
+}
+
+.modal {
+  position: fixed;
+  z-index: 20;
+  max-width: 85%;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: margin-top 150ms ease-out,  opacity 150ms ease-out;
+  transition: margin-top 150ms ease-out,  opacity 150ms ease-out;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+@media screen and (max-height: 500px) {
+  .modal {
+    width: 80%;
+  }
+}
+.modal__toggler {
+  display: none;
+}
+
+		.modal__toggler:not(:checked) ~ .modal {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  opacity: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  margin-top: -10px;
+}
+.modal__toggler:not(:checked) ~ .modal__mask {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  opacity: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.modal__mask {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  -webkit-transition: opacity 150ms ease-out;
+  transition: opacity 150ms ease-out;
+  background: RGBA(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.modal__close::after {
+  content: "\2715";
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal__title {
+  margin: 0;
+}
+.modal__content {
+  background: #eee;
+  padding: 30px;
+  max-height: 90vh;
+  overflow-x: auto;
+}
+
+
+		.demo-button {
+position:absolute;
+left:50%;
+top:50%;
+-webkit-transform:translate(-50%, -50%);
+transform:translate(-50%,-50%);
+}
+	</style>
+	<script type='text/javascript'>
+		function mostrardiv(divamostrar) {
+			[].forEach.call(document.getElementsByClassName("divcontenido"), function (elemento) { elemento.style.display = "none"; });
+			document.getElementById(divamostrar).style.display = "block";
+			if (document.getElementsByClassName("selected").length) { document.getElementsByClassName("selected")[0].className = ""; }
+			document.getElementById("menu" + divamostrar).className = "selected";
+			window.scrollTo(0,0);
+		}
+		function explainSQL() {
+			var text = 'The SELECT statement MUST contain at least three fields, in this order (other fields will be ignored in default content):\n\n\n';
+			text += '1. Primary key of entity record.\n\n';
+			text += '2. Descriptive attribute of entity record.\n\n';
+			text += '3. Foreing key that points to parent record.\n\n\n';
+			text += 'This parameter is called "generalSQL" in View Control Arbol.';
+			alert(text);
+		}
+		function explainSQLindividual() {
+			var tx = 'The SELECT statement MUST contain at least one field, wich will be used to show the descriptive name of the element (other fields will be ignored in default content).\n\n\n';
+			tx += 'The statement MUST end with a where clause like this:\nWHERE <primarykeyfield> =\nor\nWHERE <primarykeyfield> = \'\ndepending if <primarykeyfield> is a number or not.\n\n\n';
+			tx += 'This parameter is only available in View Control Arbol. Replace <primarykeyfield> with the proper field name.\n';
+			alert(tx);
+		}
+		function explainnewelement() {
+			var txt = 'If new element URL contains a pre built page of PHPRunner, you can add the following code in AfterAdd event:\n\n\n';
+			txt += '$valorid = $values["...id"];\n';
+			txt += '$valordescripcion = $values["...desc"];\n';
+			txt += 'include("plugins/controlesmib/arbol/contenido/nuevo.php");\n\n\n';
+			txt += 'This will close the current popup window and fill the correspondent control with the new value created. Replace $values["...id"] and $values["...desc"] with the proper code.';
+			alert(txt);
+		}
+	</script>
+</head>
+
+<body>
+<label id="mibmodal" style="display:hidden" for="open-modal"></label>
+<div class="modal__container">
+  <input type="checkbox" id="open-modal" class="modal__toggler"  />
+  <label class="modal__mask" for="open-modal"></label>
+  <div class="modal">
+    <label class="modal__close" for="open-modal"></label>
+    <div class="modal__content">
+      <h1 class="modal__title">GREAT NEWS !!!</h1><BR>
+      <p>Now, ARBOL 4.0 is compatible with PHPRunner 9.0.<BR>And permits "autofill" feature !!</p><BR>
+      <label class="button" for="open-modal">Close</label>
+    </div>
+  </div>
+</div>
+<script>document.getElementById('mibmodal').click();</script>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="#">&nbsp;MIB<span class="logo_colour"> &copy; Arbol</span></a></h1>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;A plugin for PHPRunner</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li id="menuhome"><a href="javascript:mostrardiv('home')">Home</a></li>
+          <li id="menuabstract"><a href="javascript:mostrardiv('abstract')">Abstract</a></li>
+          <li id="menuconfiguration"><a href="javascript:mostrardiv('configuration')">Configuration</a></li>
+          <li id="menuexample"><a href="javascript:mostrardiv('example')">Example</a></li>
+          <li id="menucontact"><a href="javascript:mostrardiv('contact')">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h3 align=center>About PHPRunner</h3>
+        <p align=justify>PHPRunner is the <a href="http://www.xlinesoft.com/phprunner" target="_blank">best PHP Code Generator in the world</a>. You can build visually appealing web interface for any local or remote MySQL, MS Access, SQL Server, Postgre and Oracle databases.</p>
+        <h3 align=center>About Me</h3>
+        <p align=justify>My name is Mario. I live in Argentina. I'm a programming enthusiast, and I like most developing RAD web applications.<br />
+        <h3 align=center>See it in action</h3>
+        <ul align=center>
+          <li><a href="http://mibarbol.besaba.com/articles_add.php" target="_blank">Required</a></li>
+	  <li><a href="http://mibarbol.besaba.com/articles_add.php" target="_blank">Any selection</a></li>
+          <li><a href="http://mibarbol.besaba.com/articles_add.php" target="_blank">Allow add new</a></li>
+          <li><a href="http://mibarbol.besaba.com/articlesleafnode_add.php" target="_blank">Only leaf node selection</a></li>
+          <li><a href="http://mibarbol.besaba.com/articles_add.php" target="_blank">Multiselect capabilities</a></li>
+        </ul>
+      </div>
+      <div id="content">
+	<div id="home" class="divcontenido">
+        	<h1 align=center>Welcome to the MIB Arbol Plugin Page</h1>
+	        <p>This page contains a fully simple explanation about a <a href="http://www.xlinesoft.com/phprunner" target="_blank">PHPRunner</a> plugin. The intention of making this object is to offer a new way of showing self-referenced entities in PHPRunner (in a treeview control) and also to contribute to make <a href="http://xlinesoft.com/marketplace/products_list.php" target="_blank">Xlinesoft Marketplace</a> bigger.</p>
+	        <p>This plugin is written entirely in <strong>PHP</strong> and <strong>CSS</strong>, using <strong>JAVASCRIPT JQUERY</strong> and two fantastic plugins: <strong>Treelistfilter</strong> and <strong>Filteringhighlight</strong>. The technique is perfectly explained by Xlinesoft in <a href="http://xlinesoft.com/blog/2012/09/07/how-to-create-your-own-edit-control-plugin" target="_blank">Creating your own Edit control plugin</a>. Thank you very much, Sergey !</p>
+		<p>It's the first plugin I've made. I hope you to enjoy programming using this little tool, it will save you hours in front of your screen. Feel free to <a href="javascript:mostrardiv('contact')">send your opinion</a>.</p>
+	        <p>You can view more MIB Plugins for PHPRunner soon.</p>
+	        <h2 align=center>Browser Compatibility</h2>
+	        <p align=center><u>Written initially for PHPRunner 6.2. Tested until version 9.0 (compatible with PHPR 9.0 since Arbol 4.0).<BR>It has been tested in the following browsers</u>:</p>
+	        <ul align=center>
+		  <li>Internet Explorer 8</li>
+		  <li>Internet Explorer 9</li>
+	          <li>FireFox 27</li>
+	          <li>Google Chrome 34</li>
+		  <li>Opera 12</li>
+	        </ul>
+	</div>
+	<div id="abstract" class="divcontenido">
+        	<h1 align=center>Entity relationships</h1>
+		<p>The relational model for database management is a database model based on first-order predicate logic, first formulated and proposed in 1969 by Edgar F. Codd. In the relational model of a database, all data is represented in terms of tuples, grouped into relations. A database organized in terms of the relational model is a relational database.</p>
+        	<h6 align=left>Hierarchical relationships</h6>
+	        <p>A hierarchical relationship allows for each child entity instance to store a reference to one parent entity instance. A parent entity instance can be referenced by an unlimited number of child entity instances. The parent entity instance can display all the child entity instances in an associated view.</p>
+		<h6 align=left>Self-referential relationships</h6>
+		<p>In a self-referential relationship, an entity has a relationship with itself. Hierarchical relationships can be self-referential. This allows entity instances to be directly associated with other entity instances of the same type. For example, an entity called "categories" can be linked to related "categories".</p>
+		<p><strong>PHPRunner</strong> doesn't provide a treeview control as a built in feature to represent this kind of situations, so the edit control plugin and view control plugin <strong>MIB &copy; Arbol</strong> covers this gap.</p>
+	        <p>The first one lets you choose an element from a treeview, allowing you to filter an item by its content. The second one lets you see the current field's value in a treeview by clicking in the shown value.</p>
+		<p>If you want to represent a foreing key value that points to a self-referential entity, you can use it.</p>
+	</div>
+	<div id="configuration" class="divcontenido">
+        	<h1 align=center>The initial parameters</h1>
+	        <p>As any other control plugin, you have to initialize it providing certain parameters to let the control to function properly as your needs.</p>
+	        <p>Current version: 3.0. Now with multiselect capabilities !<BR>In version 1.0, this parameters are (more incoming):</p>
+		<table style="width:100%; border-spacing:0;"><tbody>
+			<tr><th>Name</th><th>Spanish translation</th><th>Description</th></tr>
+          		<tr><td>required</td><td>Obligatorio</td><td>Toggle required</td></tr>
+			<tr><td>width</td><td>Ancho</td><td>Width of input edit control</td></tr>
+			<tr><td>title</td><td>Título</td><td>Title of content's window</td></tr>
+			<tr><td>contentswidth</td><td>Ancho del contenido</td><td>Width of content's window</td></tr></tbody>
+			<tr><td>contentsheight</td><td>Alto del contenido</td><td>Height of content's window</td></tr></tbody>
+			<tr><td>customcontent</td><td>Contenido personalizado</td><td>URL of content's window</td></tr></tbody>
+			<tr><td>SQL</td><td>SQL</td><td><a href="javascript:explainSQL();">Select statement</a> that builds the tree to show</td></tr></tbody>
+			<tr><td>individualSQL</td><td>SQL Individual</td><td><a href="javascript:explainSQLindividual();">Select statement</a> that shows description instead of id</td></tr></tbody>
+			<tr><td>deeplimit</td><td>Límite de recursividad</td><td>Depth of recursivity, useful in circular dependencies</td></tr></tbody>
+			<tr><td>allowanyselection</td><td>Permitir cualquier selección</td><td>Permits to select an element that has childs nodes</td></tr></tbody>
+			<tr><td>allownewelement</td><td>Permitir nuevo elemento</td><td>Permits to add an element to the tree</td></tr></tbody>
+			<tr><td>newelementurl</td><td>URL del nuevo elemento</td><td>URL of <a href="javascript:explainnewelement();">new element</a> window</td></tr></tbody>
+		</table>
+	</div>
+	<div id="example" class="divcontenido">
+        	<h1 align=center>The main setting</h1>
+	        <p>Lets imagine you have two entities called "Categories" and "Articles" that looks like this:</p>
+		<table style="width:100%; border-spacing:0;"><tbody>
+			<tr><th>CategoryId</th><th>CategoryDescription</th><th>CategoryParentId</th></tr>
+          		<tr><td>1</td><td>Mouse</td><td></td></tr>
+			<tr><td>2</td><td>Optical</td><td>1</td></tr>
+			<tr><td>3</td><td>Wheel</td><td>1</td></tr>
+			<tr><td>4</td><td>Monitor</td><td></td></tr></tbody>
+			<tr><td>5</td><td>Led</td><td>4</td></tr></tbody>
+			<tr><td>6</td><td>17"</td><td>5</td></tr></tbody>
+		</table>
+		<table style="width:100%; border-spacing:0;"><tbody>
+			<tr><th>ArticleId</th><th>ArticleDescription</th><th>CategoryId</th></tr>
+          		<tr><td>1</td><td>H4453E72</td><td>2</td></tr>
+			<tr><td>2</td><td>U8899RTY</td><td>6</td></tr>
+		</table>
+		<p>You could use <strong>MIB &copy; Arbol</strong> to represent "CategoryId" field in "Articles" entity, setting "SQL" parameter as "SELECT CategoryId, CategoryDescription, CategoryParentId FROM Categories" to build a proper treeview control to show in your application. Please refer to "See it in action" and test by yourself.</p>
+	</div>
+	<div id="contact" class="divcontenido form_settings">
+        	<h1 align=center>Contact Mario</h1>
+            	<p><span>Name</span><input class="contact" type="text" id="your_name" name="your_name" value="" placeholder="Your name" /></p>
+            	<p><span>Email</span><input class="contact" type="text" id="your_email" name="your_email" value="" placeholder="Your email" /></p>
+		<p><span>Message</span><textarea class="contact textarea" rows="20" cols="50" id="your_enquiry" name="your_enquiry" placeholder="Your enquiry" style="resize: vertical;"></textarea></p>
+		<p><span>My mail</span><span>maritoivan@yahoo.com</span></p>
+		<p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" title="Send mail" name="contact_submitted" value="Submit" onclick="location.href='mailto:mariobredicce@hotmail.com?Subject=MIBArbol PHPRunner Contact from ' + document.getElementById('your_name').value + '&body=Mail: ' + document.getElementById('your_email').value + '%0D%0AMessage: ' + document.getElementById('your_enquiry').value;" /></p>
+	</div>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      MIB &copy; Arbol | <a href="http://www.xlinesoft.com/phprunner" target="_blank">PHPRunner</a> | <a href="http://jquery.com" target="_blank">Jquery</a> | <a href="http://www.w3.org/Style/CSS" target="_blank">css</a>
+    </div>
+  </div>
+</body>
+<script type='text/javascript'>mostrardiv("home");</script>
+</html>

@@ -1,0 +1,9 @@
+$this->settings["required"] = true; // Wether is mandatory
+$this->settings["width"] = 300; // Width of the control
+$this->settings["height"] = 300; // Height of the control
+$this->settings["backgroundColor"] = "#2980B9"; // Background color of control
+$this->settings["color"] = "#FFFFFF"; // Color of points
+$this->settings["roundRadii"] = 20; // Size of circles
+$this->settings["pointRadii"] = 9; // Size of points
+$this->settings["space"] = 60; // Space between circles
+$this->settings["lineColor"] = "#ECF0F1"; // Line color

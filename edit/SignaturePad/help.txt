@@ -1,0 +1,29 @@
+<style>
+
+body {
+margin: 0px;
+padding: 0px;
+}
+p {
+font-size: 12px;
+font-weight: normal;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.container {
+background: white;
+border: 1px solid #c0c0c0;
+width: 100%;
+height: 100%;
+padding: 10px;
+}
+</style>
+<div class="container">
+<p>
+The <b>SignaturePad</b> plugin allows to add a signature pad to your forms. 
+SignaturePad works with both mouse and touch devices.
+</p>
+<p>
+SignaturePad requires a text field that is able to store 400 characters at least.
+</p>
+
+</div>

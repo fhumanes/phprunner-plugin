@@ -1,0 +1,10 @@
+$this->settings["required"] = false;                            // Wether is mandatory
+$this->settings["onlySelectOnDate"] = true;                     // if true date select just by click on day in month grid, and when user select month or year selected date doesnt change
+$this->settings["onlyTimePicker"] = false;                      // if true all pickers hide and just show timepicker
+$this->settings["format"] = 'YYYY-MM-DD HH:mm:ss';              // Format of presentation of the date Read: http://babakhani.github.io/PersianWebToolkit/doc/persian-date/#format
+$this->settings["minDate"] = 0;                                 // Set min date on datepicker, prevent user select date before given unix time
+$this->settings["maxDate"] = 9999999999999;                     // Set max date on datepicker, prevent user select date after given unix time
+$this->settings["autoClose"] = true;                            // If true datepicker close When select a date
+$this->settings["btnNextText"] = "< +";                         // text of next button
+$this->settings["btnPrevText"] = "- >";                         // text of prev button
+$this->settings["timePicker_enabled"] = false;                  // make timePicker enable or disable

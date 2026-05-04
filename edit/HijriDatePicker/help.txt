@@ -1,0 +1,23 @@
+<style>
+
+body {
+margin: 0px;
+padding: 0px;
+}
+p {
+font-size: 12px;
+font-weight: normal;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.container {
+background: white;
+border: 1px solid #c0c0c0;
+width: 100%;
+height: 100%;
+padding: 10px;
+}
+</style>
+<div class="container">
+	<p></BR><b><u>HijriDatePicker</u></b></p>
+	<p><b>HijriDatePicker</b> is a plugin built by <b>FHUMANES</b>. It is a typical special calendar for Muslim countries. It's based in Jquery and Boostrap plugin https://github.com/balbarak/bootstrap-hijri-datepicker
+</div>

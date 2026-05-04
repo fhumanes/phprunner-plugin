@@ -1,0 +1,29 @@
+$this->settings["required"] = false;
+$this->settings["width"] = 'auto';
+$this->settings["title"] = "Search and select an element from the list";
+$this->settings["tooltip"] = "Click to select from a popup list";
+$this->settings["selectbuttontext"] = "Select";
+$this->settings["contentswidth"] = 580; // 'default' for window's width - 100
+$this->settings["contentsheight"] = ''; // '' for window's height - 100
+$this->settings["customcontent"] = ''; // '' leaves content default and use SQL parameter. Otherwise, fill with path to your custom content file
+$this->settings["SQL"] = ""; // Please refer to http://mibarbol.besaba.com/help.html
+$this->settings["deeplimit"] = -1; // -1 Means ilimited. For circular recursivity you need to set a value greater than or equal to 0
+$this->settings["allowanyselection"] = 'yes';
+$this->settings["allownewelement"] = 'yes';
+$this->settings["newelementurl"] = ''; // Please refer to http://mibarbol.besaba.com/help.html
+$this->settings["buttonemptytext"] = "Empty";
+$this->settings["buttonemptytooltip"] = "Null selection";
+$this->settings["buttonnewtext"] = "New";
+$this->settings["buttonnewtooltip"] = "New element";
+$this->settings["labelsearch"] = "Search:&nbsp;";
+$this->settings["placeholdersearch"] = "Type here your search criteria";
+$this->settings["messagenotallowedanyselection"] = "It is not possible to select this element beacuse it has dependencies.";
+
+// ------------------ MULTI SELECT SETTINGS ------------------ //
+$this->settings["ismultiselect"] = 'no'; // If 'yes', ignore "customcontent" setting and uses "plugins/controlesmib/multiarbol/contenido/multiarbol.php", ignore "allownewelement" setting and set it to 'false'
+$this->settings["buttontogglealltext"] = "Toggle all";
+$this->settings["buttontogglealltooltip"] = "Select / deselect all elements in list";
+$this->settings["buttonacceptext"] = "Accept";
+$this->settings["buttonaccepttooltip"] = "Accept selection";
+$this->settings["buttontoggledependenciestooltip"] = "Select / deselect all dependencies";
+$this->settings["separator"] = ";"; // Do not use ";;mib;;" to make plugin work properly. Do not use any space neither. Do not ask why!!!!

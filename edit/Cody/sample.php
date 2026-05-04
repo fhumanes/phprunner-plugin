@@ -1,0 +1,10 @@
+$this->settings["required"] = false; // Wether is mandatory
+$this->settings["width"] = "auto"; // Width of the control
+$this->settings["tooltip"] = "Enter a phone number"; // Information tooltip
+$this->settings["allowDropdown"] = true; // If disabled, there is no dropdown arrow, and the selected flag is not clickable
+$this->settings["autoPlaceholder"] = true; // Set the input's placeholder to an example number for the selected country
+$this->settings["excludeCountries"] = ""; // Don't display the countries you specify. Example: "es,ar"
+$this->settings["initialCountry"] = "auto"; // Set the initial country selection by specifying it's country code
+$this->settings["onlyCountries"] = ""; // Display only the countries you specify. Example: "es,ar"
+$this->settings["preferredCountries"] = ""; // Specify the countries to appear at the top of the list. Example: "es,ar"
+$this->settings["separateDialCode"] = true; // Display the country dial code next to the selected flag so it's not part of the typed number

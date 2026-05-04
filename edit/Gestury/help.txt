@@ -1,0 +1,24 @@
+<style>
+	body {
+		margin: 0px;
+		padding: 0px;
+	}
+	p {
+		font-size: 12px;
+		font-weight: normal;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		text-align: center;
+	}
+	.container {
+		background: #F2F5A9;
+		border: 1px solid #c0c0c0;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+	}
+</style>
+
+<div class="container">
+	<p></BR><b><u>GESTURY</u></b></p>
+	<p><b>GESTURY</b> is a plugin built by <b>MIB</b>. It's another way of entering a number password based on gestures patterns. It's based in Jquery plugin gesture.password.js.</BR></BR>Help: plugins/controlesmib/gestury/help/help.html</p>
+</div>

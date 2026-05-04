@@ -1,0 +1,11 @@
+/* 
+    Created on : 28 ene 2026, 18:55:39
+    Author     : ferna
+*/
+
+.CodeMirror {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: auto !important;
+}
+

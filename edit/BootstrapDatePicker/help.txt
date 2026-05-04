@@ -1,0 +1,9 @@
+<style>      
+    body { margin: 0px; padding: 0px; } 
+    p { font-size: 12px; font-weight: normal; font-family: Verdana, Arial, Helvetica, sans-serif; } 
+    .container { background: white;  border: 1px solid #c0c0c0; width: 100%; height: 100%; padding: 10px; }
+</style>
+<div class="container">
+  <p><span style="font-weight: bold; text-decoration: underline;">Bootstrap DatePicker</span></p>
+  <p><span style="font-weight: bold;">Bootstrap DatePicker</span> is a plugin built by <span style="font-weight: bold;">fhumanes</span>. It is a versatile dates selector, with many controls, how holidays, which allows you to adjust to complex needs. It's based on https://uxsolutions.github.io/bootstrap-datepicker/ </p>
+</div> 

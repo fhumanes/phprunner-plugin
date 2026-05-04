@@ -1,0 +1,23 @@
+<style>
+
+body {
+margin: 0px;
+padding: 0px;
+}
+p {
+font-size: 12px;
+font-weight: normal;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.container {
+background: white;
+border: 1px solid #c0c0c0;
+width: 100%;
+height: 100%;
+padding: 10px;
+}
+</style>
+<div class="container">
+	<p></BR><b><u>Swith</u></b></p>
+	<p><b>Swith</b> is a plugin built by <b>FHUMANES</b>. Clean switch is just a lightweight pure css toggle. witch is simillar to Material Design lite switch(MDL) But in pure css and better syntax and no dependency. It's based in  plugin https://miladd3.github.io/clean-switch/
+</div>

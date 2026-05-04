@@ -1,0 +1,1 @@
+$this->settings["tooltip"] = 'Press "F11" to move to full screen';        // Tooltip of field

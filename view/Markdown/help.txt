@@ -1,0 +1,11 @@
+<style>      
+    body { margin: 0px; padding: 0px; } 
+    p { font-size: 12px; font-weight: normal; font-family: Verdana, Arial, Helvetica, sans-serif; } 
+    .container { background: white;  border: 1px solid #c0c0c0; width: 100%; height: 100%; padding: 10px; }
+</style>
+<div class="container">
+  <p><span style="font-weight: bold; text-decoration: underline;">Markdown</span></p>
+  <p><span style="font-weight: bold;">Markdown</span> is a plugin built by <span style="font-weight: bold;">FHUMANES</span>. It is a one-textarea solution where Markdown code is used. It's based in plugin https://github.com/nhn/tui.editor/tree/master/apps/editor </p>
+Consult:
+https://es.wikipedia.org/wiki/Markdown or https://en.wikipedia.org/wiki/Markdown
+</div> 

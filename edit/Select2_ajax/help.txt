@@ -1,0 +1,23 @@
+<style>
+
+body {
+margin: 0px;
+padding: 0px;
+}
+p {
+font-size: 12px;
+font-weight: normal;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.container {
+background: white;
+border: 1px solid #c0c0c0;
+width: 100%;
+height: 100%;
+padding: 10px;
+}
+</style>
+<div class="container">
+	<p></BR><b><u>Select2</u></b></p>
+	<p><b>Select2</b> is a plugin built by <b>FHUMANES</b>. Select2 gives you a customizable select box with support for searching, tagging, infinite scrolling, and many other highly used options. It's based in Select2 plugin https://select2.org/
+</div>
