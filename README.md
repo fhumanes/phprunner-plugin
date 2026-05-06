@@ -6,7 +6,7 @@ Es prácticamente seguro que mi Blog [https://fhumanes.com](https://fhumanes.com
 
 **Estos Plugins sólo sirven para ser utilizados en PHPRunner**, que es un producto comercial de Xlinesoft.
 
-En este momento, voy a realizar una explicación pequeña. Realizaré actualización de la documentación para explicar cómo seleccionar un plugin y cómo se instala en versión 10.91 o versión 11.1 de PHPRunner.
+En este momento, voy a realizar una explicación pequeña.
 
 - - -
 
