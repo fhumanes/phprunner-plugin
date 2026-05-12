@@ -102,9 +102,10 @@ EOT;
             }
             
             $license = <<<EOT
-
+var encoded = "eGxpbmVzb2Z0LTlmYWE1ZGQtMzMyMTIzZmQ=";
+				
 // Set your licence key before you create chart.
-anychart.licenseKey('xlinesoft-9faa5dd-332123fd'); 
+anychart.licenseKey(atob(encoded));
 // Set logo source.
 // You can't customize credits without a license key. See https://www.anychart.com/buy/ to learn more.
 var credits = chart.credits();
